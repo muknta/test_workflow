@@ -7,5 +7,7 @@ jobs:
   ex:
     runs-on: self-hosted
     steps:
+      - name: Try to fail
+        run: exit 1
       - name: print test
         run: echo "test test"
