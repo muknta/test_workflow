@@ -1,0 +1,11 @@
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  ex:
+    runs-on: self-hosted
+    steps:
+      - name: print test
+        run: echo "test test"
